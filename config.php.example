@@ -1,0 +1,26 @@
+<?php
+
+define("ACCESS_KEY", ""); // AWS ACCESS_KEY
+define("SECRET_KEY", ""); // AWS SECRET_KEY
+define("BUCKET", "BucketName"); // Bucket name
+
+// E-mail preferences
+define("SEND_MAIL", FALSE); // Send = TRUE, Don't send = FALSE
+$from = array('info@amazon.com' => 'S3 backup');
+$to = array('my@email.com');
+
+// MySQL credentials
+$mySqlUsername = "username";
+$mySqlPassword = "password";
+
+// MySQL tables to backup
+$sqlTables = array( 
+    'mydb1',
+    'mydb2'
+); 
+
+// Directories to backup
+$directories = array( 
+    'dir1' => '/path/to/directory',
+    'dir2' => '/path/to/directory'
+); 
