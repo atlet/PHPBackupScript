@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Andraž Prinčič @ 2016 http://www.princic.net
+ * License: GNU GENERAL PUBLIC LICENSE Version 2
+ */
+
 define("ACCESS_KEY", ""); // AWS ACCESS_KEY
 define("SECRET_KEY", ""); // AWS SECRET_KEY
 define("BUCKET", "BucketName"); // Bucket name

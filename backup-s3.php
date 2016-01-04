@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Andraž Prinčič @ 2016 http://www.princic.net
+ * License: GNU GENERAL PUBLIC LICENSE Version 2
+ */
+
 require 'vendor/autoload.php';
 require 'config.php';
 
