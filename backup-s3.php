@@ -52,7 +52,7 @@ foreach ($sqlTables as $value) {
 }
 
 foreach ($directories as $key => $value) {
-    $directoryFileName = "{$key}-{$tmpDate}.sql.gz";
+    $directoryFileName = "{$key}-{$tmpDate}.tar.gz";
     $backupDirectoryFileName = getcwd() . "/" . $directoryFileName;
 
     $command = "tar -czf $backupDirectoryFileName -C {$value} {$key}";
