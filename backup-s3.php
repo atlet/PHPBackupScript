@@ -30,7 +30,7 @@ foreach ($sqlTables as $value) {
     $SQLFileName = "{$value}-{$tmpDate}.sql.gz";
 
     $backupSqlFile = getcwd() . "/" . $SQLFileName;
-    $commandSQL = "mysqldump --add-drop-table --routines -u {$mySqlUsername} -p{$mySqlPassword}  {$value} | gzip > " . $backupSqlFile;
+    $commandSQL = "mysqldump --routines --triggers --no-create-db --add-drop-table --add-drop-trigger -u {$mySqlUsername} -p{$mySqlPassword}  {$value} | gzip > " . $backupSqlFile;
     $ret = system($commandSQL);
     
     if (!empty($ret)) {
